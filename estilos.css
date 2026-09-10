@@ -1,0 +1,153 @@
+/* ===== ESTILOS GENERALES ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ===== ENCABEZADO ===== */
+
+header {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #222;
+}
+
+
+/* ===== GALERÍA ===== */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* ===== TARJETAS ===== */
+
+.tarjeta {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ===== IMÁGENES ===== */
+
+.tarjeta img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ===== TEXTO DE LAS TARJETAS ===== */
+
+.tarjeta h3 {
+    font-size: 1.3rem;
+    color: #4f46e5;
+    margin: 20px 20px 8px;
+}
+
+.tarjeta p {
+    color: #666;
+    margin: 0 20px 20px;
+}
+
+
+/* ===== PIE DE PÁGINA ===== */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+
+/* ===== DISEÑO RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Celulares */
+@media (max-width: 600px) {
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 35px 15px;
+    }
+
+    main h2 {
+        font-size: 1.6rem;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta img {
+        height: 220px;
+    }
+}
