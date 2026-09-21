@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio | SENATI</title>
+<link rel="stylesheet" href="css/fontello.css">
+<style>
+:root{--p:#ff2a75;--d:#b80042;--s:#fff0f5;--w:#fff;--t:#222;--m:#666}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;scroll-behavior:smooth}
+body{background:#fff9fb;color:var(--t);overflow-x:hidden}
+header{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.9);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:15px 8%;z-index:1000;box-shadow:0 4px 15px rgba(255,42,117,0.05)}
+.logo{font-size:20px;font-weight:800;color:var(--t)}.logo span{color:var(--p)}
+nav{display:flex;gap:20px}nav a{text-decoration:none;color:var(--t);font-weight:600;font-size:14px;transition:0.3s}
+nav a:hover{color:var(--p)}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:space-between;padding:120px 8% 60px;background:linear-gradient(135deg,var(--s),var(--w));animation:fadeIn 1s ease}
+.hero h1{font-size:42px;margin-bottom:15px}.p{color:var(--p)}
+.hero-img{position:relative;width:280px;height:280px;animation:float 4s ease-in-out infinite}
+.hero-img img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:5px solid var(--w);box-shadow:0 15px 30px rgba(255,42,117,0.2)}
+.sec{padding:80px 8%;text-align:center}.sec.alt{background:var(--w)}
+.tit{font-size:32px;font-weight:800;margin-bottom:10px}.sub{color:var(--m);margin-bottom:40px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;text-align:left}
+.card{background:var(--w);padding:30px;border-radius:20px;box-shadow:0 10px 25px rgba(255,42,117,0.08);transition:0.4s;border-top:4px solid var(--p)}
+.card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(255,42,117,0.15)}
+.galeria{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.g-item{position:relative;height:220px;border-radius:15px;overflow:hidden;box-shadow:0 10px 20px rgba(0,0,0,0.08)}
+.g-item img{width:100%;height:100%;object-fit:cover;transition:0.5s}
+.g-item:hover img{transform:scale(1.15)}
+.overlay{position:absolute;bottom:0;width:100%;height:100%;background:linear-gradient(to top,rgba(184,0,66,0.85),transparent);display:flex;flex-direction:column;justify-content:flex-end;padding:20px;color:var(--w);opacity:0;transition:0.3s}
+.g-item:hover .overlay{opacity:1}
+footer{text-align:center;padding:25px;background:#1a1a1a;color:var(--w);font-size:13px}
+@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@media(max-width:992px){.hero{flex-direction:column-reverse;text-align:center;padding-top:100px}.hero-img{margin-bottom:30px}.galeria{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.galeria{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<header><div class="logo">Porta<span>folio</span></div><nav><a href="#hero">Inicio</a><a href="#sobre">Sobre mí</a><a href="#hab">Habilidades</a><a href="#gal">Galería</a><a href="#con">Contacto</a></nav></header>
+<section id="hero" class="hero"><div><span style="background:var(--s);color:var(--d);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700">SENATI • Ing. Software</span><h1>Hola, soy <span class="p">Ximena</span></h1><p style="color:var(--m);margin-bottom:20px">Hola, mi nombre es Ximena, tengo 18 años y actualmente estudio en SENATI, cursando el segundo ciclo de la carrera de Ingeniería de Software. </p><a href="#gal" style="background:var(--p);color:var(--w);padding:10px 25px;border-radius:25px;text-decoration:none;font-weight:600;display:inline-block">Ver Galería</a></div><div class="hero-img"><img src="imagenes/foto4.jpeg" alt="Foto"></div></section>
+<section id="sobre" class="sec alt"><h2 class="tit">Sobre Mí</h2><p class="sub">Estudiante apasionado por la tecnología en SENATI.</p><div class="grid"><div class="card"><h3><i class="icon-laptop" style="color:var(--p)"></i> Trayectoria</h3><p style="color:var(--m);font-size:14px">Cursando el segundo ciclo de Ingeniería de Software en SENATI con un fuerte enfoque en crear código limpio, eficiente y soluciones innovadoras que resuelvan problemas reales, combinando la lógica con el diseño de interfaces modernas y funcionales.</p></div><div class="card"><h3><i class="icon-cog" style="color:var(--p)"></i> Enfoque</h3><p style="color:var(--m);font-size:14px">Me motiva profundamente el aprendizaje continuo de nuevas tecnologías, la aplicación de metodologías ágiles para trabajar en equipo de manera eficiente, y el desarrollo de interfaces modernas e intuitivas que ofrezcan una excelente experiencia de usuario.</p></div></div></section>
+<section id="hab" class="sec"><h2 class="tit">Habilidades</h2><p class="sub">Considero que poseo sólidas habilidades blandas que potencian mi capacidad de trabajo, las cuales busco equilibrar y complementar día a día con la ejecución técnica y práctica.</p><div class="grid"><div class="card"><h3>Solidaridad</h3><p style="color:var(--m);font-size:14px">Para mí, la solidaridad es una práctica diaria. Creo firmemente que pequeños actos de empatía, como ayudar a un compañero o apoyar en equipo, marcan la diferencia y ayudan a construir un entorno más humano y unido.</p></div><div class="card"><h3>Empatia</h3><p style="color:var(--m);font-size:14px">Para mí, la empatía es una práctica diaria y fundamental. Me esfuerzo por comprender los sentimientos y perspectivas de los demás, poniéndome en su lugar para brindar un apoyo genuino y construir relaciones basadas en el respeto y la confianza.</p></div><div class="card"><h3>Responsabilidad</h3><p style="color:var(--m);font-size:14px">Para mí, la responsabilidad es un valor esencial que guía cada uno de mis pasos. Me comprometo firmemente con mis deberes, metas y con las personas que confían en mí, buscando siempre cumplir con dedicación, puntualidad y excelencia en todo lo que hago.</p></div></div></section>
+<section id="gal" class="sec alt"><h2 class="tit">Galería (6)</h2><p class="sub">Banco de fotos</p><div class="galeria">
+<div class="g-item"><img src="imagenes/foto4.jpeg"><div class="overlay"><h3>MOMET</h3><p>FIESTA</p></div></div>
+<div class="g-item"><img src="imagenes/foto1.jpeg"><div class="overlay"><h3>MOMET</h3><p>Salida de chicas</p></div></div>
+<div class="g-item"><img src="imagenes/foto2.jpeg"><div class="overlay"><h3>MOMET</h3><p>Dia de la PROMO</p></div></div>
+<div class="g-item"><img src="imagenes/foto3.jpeg"><div class="overlay"><h3>MOMET</h3><p>Ultimo dia de clases</p></div></div>
+<div class="g-item"><img src="imagenes/foto5.jpeg"><div class="overlay"><h3>MOMET</h3><p>Best Friends</p></div></div>
+<div class="g-item"><img src="imagenes/foto6.jpeg"><div class="overlay"><h3>MOMET</h3><p>Date girls</p></div></div>
+</div></section>
+<section id="con" class="sec"><h2 class="tit">Contacto</h2><p class="sub">Escríbeme para colaborar</p><p style="margin-bottom:10px">📧 kalidmts446@gmail.com</p><p style="margin-bottom:20px">📱 +51 970230607</p><div><a href="https://github.com" target="_blank" style="color:var(--p);font-size:24px;margin:0 10px"><i class="icon-github"></i></a><a href="https://linkedin.com" target="_blank" style="color:var(--p);font-size:24px;margin:0 10px"><i class="icon-linkedin"></i></a></div></section>
+<footer><p>&copy; 2026 - Ximena Kalid S. M.M 🌸 | SENATI</p></footer>
+</body>
+</html>
